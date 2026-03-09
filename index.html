@@ -1367,27 +1367,60 @@
             </div>
 
             <div class="grid md:grid-cols-2 gap-8">
-                <!-- 记忆架构详解 -->
+                <!-- Mem0+Graphiti 混合记忆架构详解 -->
                 <div class="glass-card p-8 rounded-2xl border-l-4 border-amber-500">
-                    <h3 class="text-xl font-bold mb-4 text-amber-400">混合记忆架构：向量+图</h3>
-                    <p class="text-gray-400 text-sm mb-6">纯向量数据库无法表达复杂关系，纯图数据库检索效率低。我们融合两者优势。</p>
+                    <h3 class="text-xl font-bold mb-4 text-amber-400">Mem0+Graphiti 混合记忆架构</h3>
+                    <p class="text-gray-400 text-sm mb-6">双层架构设计：Mem0 专注用户个性化，Graphiti 专注市场时序知识。通过 Memory Orchestrator 实现智能路由和上下文合并。</p>
                     
-                    <div class="grid grid-cols-2 gap-4">
-                        <div class="bg-white/5 p-4 rounded-lg">
-                            <div class="text-amber-400 font-bold text-sm mb-2">向量层</div>
-                            <ul class="text-xs text-gray-400 space-y-1">
-                                <li>• 用户偏好embedding</li>
-                                <li>• 历史对话压缩</li>
-                                <li>• 语义相似搜索</li>
-                            </ul>
+                    <div class="space-y-4">
+                        <div class="bg-gradient-to-r from-amber-500/10 to-amber-600/5 border border-amber-500/30 p-4 rounded-lg">
+                            <div class="text-amber-400 font-bold text-sm mb-3">Personalization Layer (Mem0)</div>
+                            <div class="grid grid-cols-3 gap-3 text-xs text-gray-400">
+                                <div>
+                                    <div class="font-medium text-amber-300 mb-1">Vector Store</div>
+                                    <div>用户交互历史语义搜索</div>
+                                </div>
+                                <div>
+                                    <div class="font-medium text-amber-300 mb-1">KV Store</div>
+                                    <div>精确偏好快速读取</div>
+                                </div>
+                                <div>
+                                    <div class="font-medium text-amber-300 mb-1">轻量Graph</div>
+                                    <div>用户-实体关联关系</div>
+                                </div>
+                            </div>
                         </div>
+                        
+                        <div class="bg-gradient-to-r from-purple-500/10 to-purple-600/5 border border-purple-500/30 p-4 rounded-lg">
+                            <div class="text-purple-400 font-bold text-sm mb-3">Market Intelligence Layer (Graphiti)</div>
+                            <div class="grid grid-cols-2 gap-3 text-xs text-gray-400">
+                                <div>
+                                    <div class="font-medium text-purple-300 mb-1">时序知识图谱</div>
+                                    <div>带有效期的节点和边（SUPPLIES, COMPETES_WITH, CAUSES）</div>
+                                </div>
+                                <div>
+                                    <div class="font-medium text-purple-300 mb-1">多跳推理</div>
+                                    <div>支持"加息→银行→科技→我的组合"因果链查询</div>
+                                </div>
+                            </div>
+                        </div>
+                        
                         <div class="bg-white/5 p-4 rounded-lg">
-                            <div class="text-amber-400 font-bold text-sm mb-2">图层</div>
-                            <ul class="text-xs text-gray-400 space-y-1">
-                                <li>• 持仓关联关系</li>
-                                <li>• 行为因果链</li>
-                                <li>• 投资偏好传导</li>
-                            </ul>
+                            <div class="text-gray-300 font-bold text-sm mb-2">查询路由示例</div>
+                            <div class="space-y-2 text-xs">
+                                <div class="flex items-center space-x-2">
+                                    <span class="text-gray-500">“我的风险偏好是什么？”</span>
+                                    <span class="text-amber-400">→ Mem0</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="text-gray-500">“加息如何影响科技股？”</span>
+                                    <span class="text-purple-400">→ Graphiti</span>
+                                </div>
+                                <div class="flex items-center space-x-2">
+                                    <span class="text-gray-500">“这个新闻对我的组合有什么影响？”</span>
+                                    <span class="text-green-400">→ Hybrid（Mem0+持仓 + Graphiti+因果链）</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -1440,15 +1473,6 @@
                         </div>
                     </div>
                     <div class="flex items-start space-x-3">
-                        <div class="w-10 h-10 rounded-full bg-purple-500/20 flex items-center justify-center flex-shrink-0">
-                            <svg class="w-5 h-5 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
-                            </svg>
-                        </div>
-                        <div>
-                            <div class="font-medium text-sm">办公地点</div>
-                            <div class="text-xs text-gray-400">北京国贸 / 上海陆家嘴</div>
-                        </div>
                     </div>
                 </div>
 
