@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AxiomMind — 机器人智能 Agent SaaS 平台</title>
+  <meta name="description" content="AxiomMind 是面向全球机器人硬件厂商的 SaaS 智能 Agent 平台，零代码接入，让机器人在 5 分钟内获得语音交互、多模态理解与自主决策能力。" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="particle-canvas" class="lp-particles"></canvas>
+
+  <!-- Navbar -->
+  <nav class="lp-nav">
+    <div class="lp-nav-inner">
+      <div class="lp-logo">
+        <span class="lp-logo-icon">◆</span>
+        <span class="lp-logo-text">AXIOMMIND</span>
+      </div>
+      <div class="lp-nav-links">
+        <a href="#solution">解决方案</a>
+        <a href="#model">商业模式</a>
+        <a href="#plans">服务方案</a>
+        <a href="#contact" class="lp-btn-primary">联系我们</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="lp-hero">
+    <div class="lp-hero-content">
+      <div class="lp-badge">🚀 下一代机器人智能平台</div>
+      <h1 class="lp-hero-title">
+        让每一台机器人
+        <br />
+        <span class="lp-gradient-text">都拥有超级大脑</span>
+      </h1>
+      <p class="lp-hero-sub">
+        AxiomMind 是面向全球机器人硬件厂商的 SaaS 智能 Agent 平台。
+        <br />
+        零代码接入，让你的机器人在 5 分钟内获得语音交互、多模态理解、自主决策与云端协同能力。
+      </p>
+      <div class="lp-hero-cta">
+        <a href="#contact" class="lp-btn-glow">免费开始 →</a>
+        <a href="#solution" class="lp-btn-ghost">了解架构</a>
+      </div>
+      <div class="lp-hero-stats">
+        <div><strong>10+</strong><span>硬件厂商对接</span></div>
+        <div><strong>&lt;5min</strong><span>接入时间</span></div>
+        <div><strong>99.9%</strong><span>服务可用性</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="lp-problem lp-section">
+    <h2 class="lp-section-title">机器人厂商面临的<span class="lp-gradient-text">三大困境</span></h2>
+    <div class="lp-problem-grid">
+      <div class="lp-card lp-card-dark">
+        <div class="lp-card-icon">🔌</div>
+        <h3>烟囱式开发</h3>
+        <p>每家厂商重复造轮子：语音识别、NLP、知识库、多轮对话……投入巨大，迭代缓慢。</p>
+      </div>
+      <div class="lp-card lp-card-dark">
+        <div class="lp-card-icon">🧠</div>
+        <h3>AI 能力断层</h3>
+        <p>自研 AI 团队成本高、周期长；接入第三方能力碎片化，无法形成统一智能体。</p>
+      </div>
+      <div class="lp-card lp-card-dark">
+        <div class="lp-card-icon">📉</div>
+        <h3>生态孤岛</h3>
+        <p>硬件之间无法互通、数据无法共享，客户粘性低，难以构建持续营收的服务模式。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solution -->
+  <section id="solution" class="lp-solution lp-section">
+    <h2 class="lp-section-title">AxiomMind <span class="lp-gradient-text">一站式解决</span></h2>
+    <div class="lp-solution-grid">
+      <div class="lp-card lp-card-glass">
+        <div class="lp-card-tags">
+          <span class="lp-tag">LLM</span><span class="lp-tag">VLM</span><span class="lp-tag">ASR</span><span class="lp-tag">TTS</span>
+        </div>
+        <h3>多模态 Agent 引擎</h3>
+        <p>集成 DeepSeek / Kimi / GPT-4 等大模型，支持语音、视觉、文本多模态融合理解与决策。</p>
+      </div>
+      <div class="lp-card lp-card-glass">
+        <div class="lp-card-tags">
+          <span class="lp-tag">SDK</span><span class="lp-tag">ROS</span><span class="lp-tag">Android</span>
+        </div>
+        <h3>零代码硬件适配</h3>
+        <p>提供 Android / Linux / ROS 标准化 SDK，5 分钟完成接入，自动适配不同传感器与执行器。</p>
+      </div>
+      <div class="lp-card lp-card-glass">
+        <div class="lp-card-tags">
+          <span class="lp-tag">RAG</span><span class="lp-tag">Vector DB</span><span class="lp-tag">KB</span>
+        </div>
+        <h3>云端知识中台</h3>
+        <p>内置 RAG 知识库、FAQ 管理、解释性内容生成，让机器人成为行业专家。</p>
+      </div>
+      <div class="lp-card lp-card-glass">
+        <div class="lp-card-tags">
+          <span class="lp-tag">OTA</span><span class="lp-tag">IoT</span><span class="lp-tag">Data</span>
+        </div>
+        <h3>设备即服务 (DaaS)</h3>
+        <p>远程 OTA、实时监控、指令下发、数据回流，把一次性硬件销售变成持续性服务收入。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Architecture -->
+  <section class="lp-arch lp-section">
+    <h2 class="lp-section-title">开放架构，<span class="lp-gradient-text">无缝接入</span></h2>
+    <div class="lp-arch-diagram">
+      <div class="lp-arch-layer lp-arch-cloud">
+        <div class="lp-arch-label">☁️ AxiomMind Cloud</div>
+        <div class="lp-arch-items">
+          <span>AI Agent Runtime</span><span>Knowledge Base</span><span>Device Management</span><span>Analytics</span>
+        </div>
+      </div>
+      <div class="lp-arch-arrow">⇅ 标准协议 / WebSocket / MQTT</div>
+      <div class="lp-arch-layer lp-arch-edge">
+        <div class="lp-arch-label">🔷 AxiomMind Agent SDK</div>
+        <div class="lp-arch-items">
+          <span>Kotlin/Android</span><span>C++/Linux</span><span>Python/ROS</span>
+        </div>
+      </div>
+      <div class="lp-arch-arrow">⇅ 驱动抽象层</div>
+      <div class="lp-arch-layer lp-arch-hw">
+        <div class="lp-arch-label">🤖 机器人硬件</div>
+        <div class="lp-arch-items">
+          <span>服务机器人</span><span>物流 AGV</span><span>清洁机器人</span><span>机械臂</span><span>无人机</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Model -->
+  <section id="model" class="lp-model lp-section">
+    <h2 class="lp-section-title">SaaS 商业模式：<span class="lp-gradient-text">Agent 即服务</span></h2>
+    <div class="lp-model-grid">
+      <div class="lp-card lp-card-glass lp-model-card">
+        <div class="lp-model-num">01</div>
+        <h3>平台订阅费</h3>
+        <p>厂商按设备数量或 AI 调用量订阅 AxiomMind 平台。无需自研 AI 团队，大幅降低智能化门槛与成本。</p>
+      </div>
+      <div class="lp-card lp-card-glass lp-model-card">
+        <div class="lp-model-num">02</div>
+        <h3>增值内容分成</h3>
+        <p>平台内置知识库、语音包、数字人等内容资产。厂商销售搭载这些内容的机器人时，平台按流水比例分成。</p>
+      </div>
+      <div class="lp-card lp-card-glass lp-model-card">
+        <div class="lp-model-num">03</div>
+        <h3>生态佣金</h3>
+        <p>第三方开发者（技能 / 应用 / 数据）入驻平台，向机器人厂商提供服务。平台抽取交易佣金，构建三方共赢生态。</p>
+      </div>
+    </div>
+    <div class="lp-model-quote">
+      <blockquote>
+        "我们不做硬件，我们让硬件更聪明。AxiomMind 是机器人行业的 Android + App Store。"
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Service Plans -->
+  <section id="plans" class="lp-plans lp-section">
+    <h2 class="lp-section-title">服务方案，<span class="lp-gradient-text">按需选择</span></h2>
+    <div class="lp-plans-grid">
+      <div class="lp-card lp-card-glass lp-plan-card">
+        <h3>Starter</h3>
+        <p class="lp-plan-desc">适合 POC 与单设备验证</p>
+        <ul>
+          <li>✓ 1 台机器人接入</li>
+          <li>✓ 基础语音交互</li>
+          <li>✓ 标准知识库</li>
+          <li>✓ 社区支持</li>
+        </ul>
+        <button class="lp-btn-ghost lp-contact-trigger">开始使用</button>
+      </div>
+      <div class="lp-card lp-card-glass lp-plan-card lp-plan-featured">
+        <h3>Pro</h3>
+        <p class="lp-plan-desc">适合中小批量生产</p>
+        <ul>
+          <li>✓ 50 台机器人接入</li>
+          <li>✓ 多模态 Agent</li>
+          <li>✓ 自定义知识库</li>
+          <li>✓ 优先技术支持</li>
+          <li>✓ 数据分析看板</li>
+        </ul>
+        <button class="lp-btn-glow lp-contact-trigger">开始使用</button>
+      </div>
+      <div class="lp-card lp-card-glass lp-plan-card">
+        <h3>Enterprise</h3>
+        <p class="lp-plan-desc">适合大规模量产与 OEM</p>
+        <ul>
+          <li>✓ 无限设备接入</li>
+          <li>✓ 私有化部署</li>
+          <li>✓ 专属模型微调</li>
+          <li>✓ SLA 保障</li>
+          <li>✓ 专属客户成功经理</li>
+        </ul>
+        <button class="lp-btn-ghost lp-contact-trigger">联系销售</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <section class="lp-partners lp-section">
+    <h2 class="lp-section-title">即将对接的<span class="lp-gradient-text">生态伙伴</span></h2>
+    <div class="lp-partner-logos">
+      <div class="lp-partner-logo">优必选</div>
+      <div class="lp-partner-logo">科沃斯</div>
+      <div class="lp-partner-logo">石头科技</div>
+      <div class="lp-partner-logo">大疆</div>
+      <div class="lp-partner-logo">猎户星空</div>
+      <div class="lp-partner-logo">高仙机器人</div>
+      <div class="lp-partner-logo">普渡科技</div>
+      <div class="lp-partner-logo">智元机器人</div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="lp-cta">
+    <div class="lp-cta-inner">
+      <h2>准备好让你的机器人<span class="lp-gradient-text"> smarter </span>了吗？</h2>
+      <p>立即联系我们，免费体验 Starter 套餐，5 分钟完成第一套机器人的智能化升级。</p>
+      <button class="lp-btn-glow lp-btn-large lp-contact-trigger">联系我们 →</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="lp-footer">
+    <div class="lp-footer-inner">
+      <div>
+        <div class="lp-logo">
+          <span class="lp-logo-icon">◆</span>
+          <span class="lp-logo-text">AXIOMMIND</span>
+        </div>
+        <p style="margin-top: 8px; opacity: 0.6; font-size: 14px;">
+          全球机器人智能 Agent SaaS 平台
+        </p>
+      </div>
+      <div class="lp-footer-links">
+        <a href="#solution">解决方案</a>
+        <a href="#model">商业模式</a>
+        <a href="#plans">服务方案</a>
+        <a href="#" class="lp-contact-trigger">联系我们</a>
+      </div>
+    </div>
+    <div class="lp-footer-copy">
+      © 2026 AxiomMind. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- Contact Modal -->
+  <div id="lp-contact-modal" class="lp-modal">
+    <div class="lp-modal-overlay"></div>
+    <div class="lp-modal-content">
+      <button class="lp-modal-close" aria-label="关闭">&times;</button>
+      <h3>联系我们</h3>
+      <p>有任何问题，欢迎通过以下方式联系：</p>
+      <div class="lp-contact-item">
+        <span class="lp-contact-label">邮箱</span>
+        <a href="mailto:bakey1985@gmail.com" class="lp-contact-value">bakey1985@gmail.com</a>
+      </div>
+      <div class="lp-contact-item">
+        <span class="lp-contact-label">QQ</span>
+        <span class="lp-contact-value">1775462</span>
+      </div>
+      <button class="lp-btn-glow lp-modal-ok">知道了</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
